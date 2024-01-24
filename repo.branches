@@ -1,0 +1,3 @@
+func (repo *GitRepository) checkout(branch string) {
+ if commits, ok := repo.branches[branch]; ok {
+  repo.currentBranch = branch
